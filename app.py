@@ -86,9 +86,9 @@ with st.container():
             Prestigious gigs include the time 'with a band', I had the opportunity and the pleasure to support the local band 'The Troggs', famous for
              their many songs including the hits - 'Wild thing' and 'Love is all around'. 
             Previous band projects include Konan, Eezey Money, The Del Newman band, The Greg Winters duo + others
-            Venues played are ranging from the 'Smaller side of tiny' to the medium size theater and huge outdoor event.
+            Venues played are ranging from the 'smaller side of tiny', to the medium size theater and huge outdoor events.
             I currently, am guitarist/keyboard player in the band Sleepwalker
-            I am a private tutor from my home address in Andover. Use the form below to contact me.
+            I'm privately tutoring from my home address in Andover. Use the form below to contact me.
             On my SoundCloud page, You can listen to my work.
             """
         )
@@ -137,7 +137,7 @@ with text_column:
 # ---- Contact ----
 with st.container():
     st.write("---")
-    st.header("Get in touch with me!")
+    st.header("👇Get in touch with me!👇 or Facebook DM")
     st.write("##")
 
 # Documentation
