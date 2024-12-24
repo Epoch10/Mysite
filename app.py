@@ -85,14 +85,15 @@ with st.container():
             Instruments include the guitar to which I studied at ACM Guildford, I'm self taught on keyboards/organ/piano and C&G trained in sound engineering.
             Prestigious gigs include the time 'with a band', I had the opportunity and the pleasure to support the local band 'The Troggs', famous for
              their many songs including the hits - 'Wild thing' and 'Love is all around'. 
-            Previous band projects include Konan, Eezey Money, The Del Newman band, The Greg Winters duo + others
-            Venues played are ranging from the 'smaller side of tiny', to the medium size theater and huge outdoor events.
-            I currently, am guitarist/keyboard player in the band Sleepwalker
+            Previous band projects include Konan, Eezey Money, The Del Newman band, The Greg Winters duo + collaborations etc.
+            I have proudly played venues ranging from the 'smaller side of tiny', to the theaters and large summer festivals.
+            Currently, I am guitarist/keyboard player in the cool band Sleepwalker. Please do check us out. 
             I'm privately tutoring from my home address in Andover. Use the form below to contact me.
             On my SoundCloud page, You can listen to my work.
             """
         )
-        st.write("[SoundCloud >](https://on.soundcloud.com/w4KZEJiMDdm7MDoy9)")
+        st.write("[Sleepwalker >](https://www.facebook.com/profile.php?id=61560893038443)")
+        st.write("[My SoundCloud >](https://on.soundcloud.com/w4KZEJiMDdm7MDoy9)")
     with right_column:
         st_lottie(lottie_coding, height=300, key="coding")
 
