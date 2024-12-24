@@ -160,7 +160,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 st.markdown(
-    f"Wishing you all a wonderful Xmas and a happy new year. "
+    f"🎅Wishing you all a wonderful Xmas and a happy new year🎅 "
 )
 
 local_css("style/style.css")
