@@ -83,7 +83,7 @@ with st.container():
             I am an accomplished player and tutor, both live and in the studio.
             Songwriting and collaboration are top on my agenda, with a view to develop live projects. Don't hesitate to be in touch!
             Instruments include the guitar to which I studied at ACM Guildford, I'm self taught on keyboards/organ/piano and C&G trained in sound engineering.
-            Prestigious gigs include the time 'with a band', I had the opportunity and the pleasure to support the local band 'The Troggs', famous for
+            Prestigious gigs include the time 'with a band', I had the opportunity and the pleasure to support and play alongside members of the local band 'The Troggs', famous for
              their many songs including the hits - 'Wild thing' and 'Love is all around'. 
             Previous band projects include Konan, Eezey Money, The Del Newman band, The Greg Winters duo + collaborations etc.
             I have proudly played venues ranging from the 'smaller side of tiny', to the theaters and large summer festivals.
