@@ -111,7 +111,7 @@ with text_column:
         Written 'rather late' for 2024... I was never going to compete with Wham 'lol' but nevertherless... 
         It started as a 'free time' played piano melody and chorus hook.
         Then, came the strings, horns and EP...
-        Drums and percussion, Guitars, Bells, pads and finally.. Vocals
+        Drums and percussion, guitars, bells, pads, and finally.. Vocals
         """
     )
     st.markdown("[Watch 'Merry Xmas'...](https://youtu.be/7Bdr8Belb8Ihttps://youtu.be/7Bdr8Belb8I)")
@@ -124,7 +124,7 @@ with st.container():
 with image_column:
     st.image(img_2)
 with text_column:
-    st.subheader("A project named 2140")
+    st.subheader("2140")
     st.write(
         """
         A growing solo project featuring synthwave/dark synth/electronic music.
@@ -160,7 +160,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 st.markdown(
-    f"🎅Wishing you all a wonderful Xmas and a happy new year🎅 "
+    f"🎅Wishing you all, a wonderful Xmas and a happy new year🎅 "
 )
 
 local_css("style/style.css")
