@@ -143,7 +143,7 @@ with st.container():
 
 # Documentation
 contact_form = """
-<form action="https://formsubmit.co/ace6ca397620b39d0da852ab945b8dcf" method="POST">
+<form action="https://formspree.io/f/mgvvvyvj" method="POST">
     <input type="text" name="name" placeholder="Your name" required>
     <input type="email" name="email" placeholder="Your email" required>
     <textarea name="message" placeholder="Your message here" required></textarea>
