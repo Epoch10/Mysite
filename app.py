@@ -110,7 +110,7 @@ with text_column:
     st.write(
         """
         Finally, a Xmas song that doesn't mention war, greed, politics, breakups, melancholy.
-        Written 'rather late' for 2024... I did all the work on this jolly little tune. 
+        Written 'rather late' for 2024... I was never going to compete with Wham 'lol' but nevertherless... 
         It started as a 'free time' played piano melody and chorus hook.
         Then, came the strings, horns and EP...
         Drums and percussion, Guitars, Bells, pads and finally.. Vocals
