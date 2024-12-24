@@ -120,7 +120,7 @@ with text_column:
     
 with st.container():
     st.write("---")
-    st.header("Reccent Projects")
+    st.header("Recent Projects")
     st.write("##")
     image_column, text_column = st.columns((1, 2))
 with image_column:
@@ -143,7 +143,7 @@ with st.container():
 
 # Documentation
 contact_form = """
-<form action="https://formsubmit.co/s.crompton50@ntlworld.com" method="POST">
+<form action="https://formsubmit.co/ace6ca397620b39d0da852ab945b8dcf" method="POST">
     <input type="text" name="name" placeholder="Your name" required>
     <input type="email" name="email" placeholder="Your email" required>
     <textarea name="message" placeholder="Your message here" required></textarea>
