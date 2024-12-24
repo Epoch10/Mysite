@@ -75,7 +75,7 @@ with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
-        st.header("Who am I?")
+        st.header("About me")
         st.write("##")
         st.write(
             """
