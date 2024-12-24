@@ -104,14 +104,14 @@ with st.container():
 with image_column:
     st.image(img_1)
 with text_column:
-    st.subheader("An Xmas song that I composed, produced, and performed")
+    st.subheader("Merry Xmas")
     st.write(
         """
-        Finally, a Xmas song that doesn't mention war, greed, politics, breakups, melancholy.
-        Written 'rather late' for 2024... I was never going to compete with Wham 'lol' but nevertherless... 
+        Finally, an Xmas song that doesn't mention war, greed, politics, breakups, or melancholy.
+        Written 'rather late' for 2024... It wasn't going to compete with Wham '🤣' but nevertherless... It was done. 
         It started as a 'free time' played piano melody and chorus hook.
         Then, came the strings, horns and EP...
-        Drums and percussion, guitars, bells, pads, and finally.. Vocals
+        Next, for some Drums and percussion, guitars, bells, pads, and finally.. Vocals
         """
     )
     st.markdown("[Watch 'Merry Xmas'...](https://youtu.be/7Bdr8Belb8Ihttps://youtu.be/7Bdr8Belb8I)")
@@ -127,8 +127,8 @@ with text_column:
     st.subheader("2140")
     st.write(
         """
-        A growing solo project featuring synthwave/dark synth/electronic music.
-        Featuring synths and guitars with a cyberpunk, futuresque yet retro feel.
+        A growing solo project in development featuring synthwave/dark synth/electronic music.
+        Featuring synths, guitars, soundscapes with a cyberpunk, futuresque yet retro feel.
         """
     )
     st.markdown("[Watch 'It's coming'...](https://youtu.be/BazJ4eJfC_w?feature=shared)")
