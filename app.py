@@ -138,7 +138,7 @@ with text_column:
 # ---- Contact ----
 with st.container():
     st.write("---")
-    st.header("👇Get in touch with me!👇 or Facebook DM")
+    st.header("👇Get in touch with me!👇")
     st.write("##")
 
 # Documentation
