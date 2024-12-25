@@ -50,25 +50,31 @@ def set_bg_hack(main_bg):
 
 
 
-set_bg_hack('images/pic3.png')
+set_bg_hack('images/pic4.png')
 run_snow_animation()
 
 # Load assets
 lottie_coding = load_lottieurl("https://lottie.host/3b3514d9-1f05-4168-8ad9-3c353b656e98/FVhHmJWQ8j.json")
 img_1  = Image.open("images/pic1.jpg")
 img_2 = Image.open("images/pic2.jpg")
-
+img_3 = Image.open("images/pic3.png")
+img_4 = Image.open("images/pic5.png")
+lottie_2 = load_lottieurl("https://lottie.host/78128e69-546f-42f6-b7e6-37937db4ed3d/KPKtXtZubz.json")
 # ---- Header section ----
 with st.container():
-    st.subheader("Hi I am Sam :wave:")
-    st.title("A Musician/Producer/Tutor in Hampshire UK")
-    st.write("I have a home recording studio suitable for music production, arranging, tutoring, recording, remote stem work etc.")
-    st.write("[Facebook >](https://www.facebook.com/sam.crompton.946)")
-    st.write("[TikTok >](https://www.tiktok.com/@epochten?_t=ZG-8sSfKrFrBS4&_r=1)")
-    st.write("[Instagram >](https://www.instagram.com/s.crompton50/profilecard/?igsh=MXNqaHl2OWVtczV6eQ==)")
-    st.write("[YouTube >](https://youtube.com/@jamessamuels9943?feature=shared)")
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.subheader("Hi I am Sam :wave:")
+        st.title("A Musician/Producer/Tutor in Hampshire UK")
+        st.write("I have a home recording studio suitable for music production, arranging, tutoring, recording, remote stem work etc.")
+        st.write("[Facebook >](https://www.facebook.com/sam.crompton.946)")
+        st.write("[TikTok >](https://www.tiktok.com/@epochten?_t=ZG-8sSfKrFrBS4&_r=1)")
+        st.write("[Instagram >](https://www.instagram.com/s.crompton50/profilecard/?igsh=MXNqaHl2OWVtczV6eQ==)")
+        st.write("[YouTube >](https://youtube.com/@jamessamuels9943?feature=shared)")
+    with right_column:
+        st.image(img_3)
 
-# ---- What I do ----
+# ---- About me ----
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
@@ -93,7 +99,8 @@ with st.container():
         st.write("[Sleepwalker >](https://www.facebook.com/profile.php?id=61560893038443)")
         st.write("[My SoundCloud >](https://on.soundcloud.com/w4KZEJiMDdm7MDoy9)")
     with right_column:
-        st_lottie(lottie_coding, height=300, key="coding")
+        st_lottie(lottie_coding, height=300, key="code")
+        st_lottie(lottie_2, height=300, key="coding")
 
 # --- Projects ---
 with st.container():
@@ -152,7 +159,8 @@ left_column, right_column = st.columns(2)
 with left_column:    
     st.markdown(contact_form, unsafe_allow_html=True)
 with right_column:
-    st.empty()
+    st.image(img_4)
+    
 
 #Use local CSS file
 def local_css(file_name):
