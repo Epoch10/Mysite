@@ -98,6 +98,7 @@ with st.container():
         )
         st.write("[Sleepwalker >](https://www.facebook.com/profile.php?id=61560893038443)")
         st.write("[My SoundCloud >](https://on.soundcloud.com/w4KZEJiMDdm7MDoy9)")
+        st.write("[My Bandmix >](https://www.bandmix.co.uk/epoch-10/)")
     with right_column:
         st_lottie(lottie_coding, height=300, key="code")
         st_lottie(lottie_2, height=300, key="coding")
