@@ -5,7 +5,7 @@ from streamlit_lottie import st_lottie
 from streamlit_extras.let_it_rain import rain 
 import base64
 
-st.set_page_config(page_title="MyWebpage", page_icon="🎶", layout="wide")
+st.set_page_config(page_title="Epoch-10", page_icon="🎶", layout="wide")
 
 def run_snow_animation():
     rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
