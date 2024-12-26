@@ -1,4 +1,5 @@
 from  PIL import Image
+from pip import streamlit_player
 from streamlit_player import st_player
 import requests
 import streamlit as st
