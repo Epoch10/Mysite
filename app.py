@@ -1,5 +1,5 @@
 from  PIL import Image
-from streamlit_player import st_player
+from streamlit import st_player
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
