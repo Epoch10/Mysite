@@ -1,4 +1,5 @@
 from  PIL import Image
+from streamlit_player import st_player
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
@@ -122,8 +123,8 @@ with text_column:
         Next, for some Drums and percussion, guitars, bells, pads, and finally.. Vocals
         """
     )
-    st.markdown("[Watch 'Merry Xmas'...](https://youtu.be/7Bdr8Belb8Ihttps://youtu.be/7Bdr8Belb8I)")
-    
+    st.markdown("Watch 'Merry Xmas'...")
+    st_player("https://youtu.be/7Bdr8Belb8Ihttps://youtu.be/7Bdr8Belb8I", key="first_vid")
 with st.container():
     st.write("---")
     st.header("Recent Projects")
@@ -139,7 +140,8 @@ with text_column:
         Featuring synths, guitars, soundscapes with a cyberpunk, futuresque yet retro feel.
         """
     )
-    st.markdown("[Watch 'It's coming'...](https://youtu.be/BazJ4eJfC_w?feature=shared)")
+    st.markdown("Watch 'It's coming'...")
+    st_player("https://youtu.be/BazJ4eJfC_w", key="second_vid")
 
 # ---- Contact ----
 with st.container():
