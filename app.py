@@ -152,6 +152,10 @@ with st.container():
     st.header("👇Get in touch with me!👇")
     st.write("##")
 
+c = """
+<iframe width="558" height="360" src="https://www.youtube.com/embed/7Bdr8Belb8I" title="Merry Xmas (2024)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+"""
+
 # Documentation
 contact_form = """
 <form action="https://formspree.io/f/mgvvvyvj" method="POST">
