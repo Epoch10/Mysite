@@ -163,6 +163,8 @@ with left_column:
     st.markdown(contact_form, unsafe_allow_html=True)
 with right_column:
     st.image(img_4)
+
+local_css("style/style2.css")
     
 
 #Use local CSS file
