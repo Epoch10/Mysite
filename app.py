@@ -5,7 +5,6 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_extras.let_it_rain import rain 
 import base64
-import streamlit.components.v1 as components
 import streamlit as st
 from st_social_media_links import SocialMediaIcons
 
@@ -20,11 +19,6 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-# Define your custom component
-def image_button(image_path, label="", width=100, height=50):
-    # Frontend code here
-    html_str = f"<button><img src='{image_path}' width='{width}' height='{height}'>{label}</button>"
-    components.html(html_str, height=height)
 
 # Function to encode the image to base64
 
