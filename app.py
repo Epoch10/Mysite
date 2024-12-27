@@ -5,6 +5,9 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_extras.let_it_rain import rain 
 import base64
+import streamlit.components.v1 as components
+import streamlit as st
+from st_social_media_links import SocialMediaIcons
 
 st.set_page_config(page_title="Epoch-10", page_icon="🎶", layout="wide")
 
@@ -16,6 +19,12 @@ def load_lottieurl(url):
     if r.status_code != 200:
         return None
     return r.json()
+
+# Define your custom component
+def image_button(image_path, label="", width=100, height=50):
+    # Frontend code here
+    html_str = f"<button><img src='{image_path}' width='{width}' height='{height}'>{label}</button>"
+    components.html(html_str, height=height)
 
 # Function to encode the image to base64
 
@@ -64,6 +73,7 @@ img_2 = Image.open("images/pic2.jpg")
 img_3 = Image.open("images/pic3.png")
 img_4 = Image.open("images/pic5.png")
 lottie_2 = load_lottieurl("https://lottie.host/78128e69-546f-42f6-b7e6-37937db4ed3d/KPKtXtZubz.json")
+studio = Image.open("images/studio.jpg")
 # ---- Header section ----
 with st.container():
     left_column, right_column = st.columns(2)
@@ -71,10 +81,18 @@ with st.container():
         st.subheader("Hi I am Sam :wave:")
         st.title("A Musician/Producer/Tutor in Hampshire UK")
         st.write("I have a home recording studio suitable for music production, arranging, tutoring, recording, remote stem work etc.")
-        st.write("[Facebook >](https://www.facebook.com/sam.crompton.946)")
-        st.write("[TikTok >](https://www.tiktok.com/@epochten?_t=ZG-8sSfKrFrBS4&_r=1)")
-        st.write("[Instagram >](https://www.instagram.com/s.crompton50/profilecard/?igsh=MXNqaHl2OWVtczV6eQ==)")
-        st.write("[YouTube >](https://youtube.com/@jamessamuels9943?feature=shared)")
+        social_media_links = [
+            "https://www.tiktok.com/@epochten?_t=ZG-8sSfKrFrBS4&_r=1",
+            "https://youtube.com/@jamessamuels9943?feature=shared",
+            "https://www.instagram.com/s.crompton50/profilecard/?igsh=MXNqaHl2OWVtczV6eQ==",
+            "https://www.facebook.com/sam.crompton.946",
+        ]
+        st.image(studio)
+        social_media_icons = SocialMediaIcons(social_media_links)
+
+        social_media_icons.render()
+
+
     with right_column:
         st.image(img_3)
 
@@ -171,13 +189,8 @@ with left_column:
 with right_column:
     st.image(img_4)
 
-local_css("style/style2.css")
-    
-
-
-
 st.markdown(
     f"🎅Wishing you all, a wonderful Xmas and a happy new year🎅 "
 )
-
+local_css("style/style2.css")
 local_css("style/style.css")
