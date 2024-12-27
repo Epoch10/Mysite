@@ -4,3 +4,4 @@ streamlit_lottie==0.0.5
 streamlit_player
 st_social_media_links
 SocialMediaIcons
+streamlit.components.v1streamlit.components.v1
