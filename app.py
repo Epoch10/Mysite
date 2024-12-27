@@ -28,6 +28,7 @@ def get_base64_of_bin_file(bin_file):
     return base64.b64encode(data).decode()
 
 # Function to set the background image
+
 def set_bg_hack(main_bg):
     '''
     A function to unpack an image from root folder and set as bg.
@@ -66,9 +67,14 @@ img_1  = Image.open("images/pic1.jpg")
 img_2 = Image.open("images/pic2.jpg")
 img_3 = Image.open("images/pic3.png")
 img_4 = Image.open("images/pic5.png")
+sw = Image.open("images/sw.jpg")
 lottie_2 = load_lottieurl("https://lottie.host/78128e69-546f-42f6-b7e6-37937db4ed3d/KPKtXtZubz.json")
 studio = Image.open("images/studio.jpg")
+
+
+
 # ---- Header section ----
+
 with st.container():
     left_column, right_column = st.columns(2)
     with left_column:
@@ -85,12 +91,13 @@ with st.container():
         social_media_icons = SocialMediaIcons(social_media_links)
 
         social_media_icons.render()
-
-
     with right_column:
         st.image(img_3)
+        st.image(sw)
+        
 
 # ---- About me ----
+
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
@@ -112,14 +119,23 @@ with st.container():
             On my SoundCloud page, You can listen to my work.
             """
         )
+        social_media_links = [           
+            "https://on.soundcloud.com/w4KZEJiMDdm7MDoy9",
+            "https://www.bandmix.co.uk/epoch-10/",
+        ]
+        social_media_icons = SocialMediaIcons(social_media_links)
+
+        social_media_icons.render()
         st.write("[Sleepwalker >](https://www.facebook.com/profile.php?id=61560893038443)")
         st.write("[My SoundCloud >](https://on.soundcloud.com/w4KZEJiMDdm7MDoy9)")
         st.write("[My Bandmix >](https://www.bandmix.co.uk/epoch-10/)")
     with right_column:
         st_lottie(lottie_coding, height=300, key="code")
         st_lottie(lottie_2, height=300, key="coding")
+        
 
 # --- Projects ---
+
 with st.container():
     st.write("---")
     st.header("Recent Projects")
@@ -157,8 +173,10 @@ with text_column:
     )
     st.markdown("Watch 'It's coming'...")
     st_player("https://youtu.be/BazJ4eJfC_w", key="second_vid")
+    
 
 # ---- Contact ----
+
 with st.container():
     st.write("---")
     st.header("👇Get in touch with me!👇")
@@ -168,7 +186,9 @@ c = """
 <iframe width="558" height="360" src="https://www.youtube.com/embed/7Bdr8Belb8I" title="Merry Xmas (2024)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 """
 
+
 # Documentation
+
 contact_form = """
 <form action="https://formspree.io/f/mgvvvyvj" method="POST">
     <input type="text" name="name" placeholder="Your name" required>
