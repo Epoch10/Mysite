@@ -48,7 +48,10 @@ def set_bg_hack(main_bg):
          unsafe_allow_html=True
      )
 
-
+#Use local CSS file
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
 set_bg_hack('images/pic4.png')
@@ -167,10 +170,7 @@ with right_column:
 local_css("style/style2.css")
     
 
-#Use local CSS file
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
 
 st.markdown(
     f"🎅Wishing you all, a wonderful Xmas and a happy new year🎅 "
