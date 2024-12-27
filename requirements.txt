@@ -3,6 +3,4 @@ streamlit_extras==0.3.6
 streamlit_lottie==0.0.5
 streamlit_player
 st_social_media_links
-SocialMediaIcons
-streamlit.components.v1streamlit.components.v1
-extract-social-media==0.4.0
+
