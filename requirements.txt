@@ -2,5 +2,4 @@ streamlit==1.29.0
 streamlit_extras==0.3.6
 streamlit_lottie==0.0.5
 streamlit_player
-streamlit_SocialMediaIcons
-streamlit_st_social_media_links
+
