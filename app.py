@@ -1,5 +1,6 @@
 from  PIL import Image
 from streamlit_player import st_player
+from streamlit_extras.stylable_container import stylable_container
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
@@ -66,6 +67,7 @@ img_2 = Image.open("images/pic2.jpg")
 img_3 = Image.open("images/pic3.png")
 img_4 = Image.open("images/pic5.png")
 sw = Image.open("images/sw.jpg")
+sleep = Image.open("images/sleep.png")
 lottie_2 = load_lottieurl("https://lottie.host/78128e69-546f-42f6-b7e6-37937db4ed3d/KPKtXtZubz.json")
 studio = Image.open("images/studio.jpg")
 # ---- Header section ----
@@ -81,15 +83,15 @@ with st.container():
             "https://www.instagram.com/s.crompton50/profilecard/?igsh=MXNqaHl2OWVtczV6eQ==",
             "https://www.facebook.com/sam.crompton.946",
         ]
-        st.image(studio)
         social_media_icons = SocialMediaIcons(social_media_links)
 
         social_media_icons.render()
-
+        st.image(studio)
+        
 
     with right_column:
         st.image(img_3)
-        st.image(sw)
+        #st_lottie(lottie_coding, height=300, key="code")
 
 # ---- About me ----
 with st.container():
@@ -113,22 +115,18 @@ with st.container():
             On my SoundCloud page, You can listen to my work.
             """
         )
-        img = image_select("", ["images/sc.png", "images/sleep3.png", "images/bm3.png"])
-        if img == "images/sc.png":
-            st.page_link ("https://on.soundcloud.com/w4KZEJiMDdm7MDoy9", label="Visit Soundcloud [Click here or select another platform]")
-            
-        if img == "images/sleep3.png":
-            st.page_link ("https://www.facebook.com/profile.php?id=61560893038443", label="Visit Sleepwalker [Click here or select another platform]")
-            
-        if img == "images/bm3.png":
-            st.page_link ("https://www.bandmix.co.uk/epoch-10/", label="Visit Bandmix [Click here or select another platform]")
-            
-            
-    with right_column:
-        st_lottie(lottie_coding, height=300, key="code")
-        st_lottie(lottie_2, height=300, key="coding")
+       
         
-        #st.write(img)
+        st.markdown('[![](https://i.ibb.co/8cWgXxf/sleep3.png)](https://www.facebook.com/profile.php?id=61560893038443)')
+        
+
+    with right_column:
+        #st_lottie(lottie_coding, height=300, key="code")
+        
+        st.markdown('[![](https://i.ibb.co/b11B096/sc.png)](https://on.soundcloud.com/w4KZEJiMDdm7MDoy9)')
+
+        st.markdown('[![](https://i.ibb.co/1zmQjGG/bm3.png)](https://www.bandmix.co.uk/epoch-10/)')
+        
         
 # --- Projects ---
 with st.container():
@@ -153,7 +151,6 @@ with text_column:
     st_player("https://youtu.be/7Bdr8Belb8Ihttps://youtu.be/7Bdr8Belb8I", key="first_vid")
 with st.container():
     st.write("---")
-    st.header("Recent Projects")
     st.write("##")
     image_column, text_column = st.columns((1, 2))
 with image_column:
@@ -174,6 +171,7 @@ with st.container():
     st.write("---")
     st.header("👇Get in touch with me!👇")
     st.write("##")
+
 c = """
 <iframe width="558" height="360" src="https://www.youtube.com/embed/7Bdr8Belb8I" title="Merry Xmas (2024)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 """
@@ -188,11 +186,14 @@ contact_form = """
     <button type="submit">Send</button>
 </form>
 """
+
+
 left_column, right_column = st.columns(2)
 with left_column:    
     st.markdown(contact_form, unsafe_allow_html=True)
 with right_column:
     st.image(img_4)
+
 
 st.markdown(
     f"🎅Wishing you all, a wonderful Xmas and a happy new year🎅 "
