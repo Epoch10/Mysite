@@ -67,7 +67,7 @@ img_2 = Image.open("images/pic2.jpg")
 img_3 = Image.open("images/pic3.png")
 img_4 = Image.open("images/pic5.png")
 sw = Image.open("images/sw.jpg")
-sleep = Image.open("images/sleep.png")
+#sleep = Image.open("images/sleep.png")
 lottie_2 = load_lottieurl("https://lottie.host/78128e69-546f-42f6-b7e6-37937db4ed3d/KPKtXtZubz.json")
 studio = Image.open("images/studio.jpg")
 # ---- Header section ----
