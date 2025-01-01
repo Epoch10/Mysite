@@ -136,7 +136,7 @@ with st.container():
     st.write("##")
     image_column, text_column = st.columns((1, 2))
 with image_column:
-    st.image(img_6)
+    st.image(img_5)
 with text_column:
     st.subheader("Auld lang syne")
     st.write(
