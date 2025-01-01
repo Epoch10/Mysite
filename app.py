@@ -58,7 +58,7 @@ def local_css(file_name):
 
 
 set_bg_hack('images/pic4.png')
-run_snow_animation()
+#run_snow_animation()
 
 # Load assets
 lottie_coding = load_lottieurl("https://lottie.host/3b3514d9-1f05-4168-8ad9-3c353b656e98/FVhHmJWQ8j.json")
@@ -196,7 +196,7 @@ with right_column:
 
 
 st.markdown(
-    f"🎅Wishing you all, a wonderful Xmas and a happy new year🎅 "
+    f"Happy new year 2025"
 )
 local_css("style/style2.css")
 local_css("style/style.css")
