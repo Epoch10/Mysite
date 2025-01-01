@@ -66,6 +66,7 @@ img_1  = Image.open("images/pic1.jpg")
 img_2 = Image.open("images/pic2.jpg")
 img_3 = Image.open("images/pic3.png")
 img_4 = Image.open("images/pic5.png")
+img_5  = Image.open("images/pic6.jpg")
 sw = Image.open("images/sw.jpg")
 #sleep = Image.open("images/sleep.png")
 lottie_2 = load_lottieurl("https://lottie.host/78128e69-546f-42f6-b7e6-37937db4ed3d/KPKtXtZubz.json")
@@ -132,6 +133,21 @@ with st.container():
 with st.container():
     st.write("---")
     st.header("Recent Projects")
+    st.write("##")
+    image_column, text_column = st.columns((1, 2))
+with image_column:
+    st.image(img_6)
+with text_column:
+    st.subheader("Auld lang syne")
+    st.write(
+        """
+        A traditional Scottish song, reworked for 2025. Happy new year :)
+        """
+    )
+    st.markdown("Watch 'Auld lang syne'...")
+    st_player("https://www.youtube.com/watch?v=vFtHyA3ErGg", key="third_vid")
+with st.container():
+    st.write("---")
     st.write("##")
     image_column, text_column = st.columns((1, 2))
 with image_column:
