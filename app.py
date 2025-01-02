@@ -112,8 +112,8 @@ with st.container():
             Previous band projects include Konan, Eezey Money, The Del Newman band, The Greg Winters duo + collaborations etc.
             I have proudly played venues ranging from the 'smaller side of tiny', to the theaters and large summer festivals.
             Currently, I am guitarist/keyboard player in the cool band Sleepwalker. Please do check us out. 
-            I'm privately tutoring from my home address in Andover. Use the form below to contact me.
-            On my SoundCloud page, You can listen to my work.
+            I'm privately tutoring from my home address in Andover. Online 'Zoom' lessons are negotiable. Use the form below to contact me regarding this.
+            On my SoundCloud page, You can listen to my work. For full details of my studio equipment, there's Bandmix.
             """
         )
        
@@ -123,10 +123,11 @@ with st.container():
 
     with right_column:
         #st_lottie(lottie_coding, height=300, key="code")
-        
-        st.markdown('[![](https://i.ibb.co/b11B096/sc.png)](https://on.soundcloud.com/w4KZEJiMDdm7MDoy9)')
+        st.components.v1.iframe("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1905231439&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true", height=578)
+        st.markdown('[![](https://i.ibb.co/b6VHynh/newsize.jpg)](https://www.bandmix.co.uk/epoch-10/)')
+        #st.markdown('[![](https://i.ibb.co/b11B096/sc.png)](https://on.soundcloud.com/w4KZEJiMDdm7MDoy9)')
 
-        st.markdown('[![](https://i.ibb.co/1zmQjGG/bm3.png)](https://www.bandmix.co.uk/epoch-10/)')
+        #st.markdown('[![](https://i.ibb.co/1zmQjGG/bm3.png)](https://www.bandmix.co.uk/epoch-10/)')
         
         
 # --- Projects ---
