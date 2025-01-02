@@ -68,6 +68,7 @@ img_3 = Image.open("images/pic3.png")
 img_4 = Image.open("images/pic5.png")
 img_5  = Image.open("images/pic6.jpg")
 sw = Image.open("images/sw.jpg")
+doge  = Image.open("images/doge.jpg")
 #sleep = Image.open("images/sleep.png")
 lottie_2 = load_lottieurl("https://lottie.host/78128e69-546f-42f6-b7e6-37937db4ed3d/KPKtXtZubz.json")
 studio = Image.open("images/studio.jpg")
@@ -208,6 +209,12 @@ contact_form = """
 left_column, right_column = st.columns(2)
 with left_column:    
     st.markdown(contact_form, unsafe_allow_html=True)
+    st.markdown(
+        f"🙏Keep the project going... DOGE accepted🙏" 
+        f"DFdL3jeQ9o6hWoHJoHAP7WivULfBvabHJp"
+    )
+    st.image(doge, width = 200)
+
 with right_column:
     st.image(img_4)
 
