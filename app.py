@@ -111,7 +111,6 @@ if selected == "Home":
 
     # ---- About me ----
     with st.container():
-        st.write("---")
         left_column, right_column = st.columns(2)
         with left_column:
             st.header("About me")
@@ -127,8 +126,8 @@ if selected == "Home":
                 Previous band projects include Konan, Eezey Money, The Del Newman band, The Greg Winters duo + collaborations etc.
                 I have proudly played venues ranging from the 'smaller side of tiny', to the theaters and large summer festivals.
                 Currently, I am guitarist/keyboard player in the cool band Sleepwalker. Please do check us out. 
-                I'm privately tutoring from my home address in Andover. Online 'Zoom' lessons are negotiable. Use the form below to contact me regarding this.
-                On my SoundCloud page, You can listen to my work. For full details of my studio equipment, there's Bandmix.
+                I'm privately tutoring from my home address in Andover. In-person or online 'Zoom' lessons are negotiable. Contact section 'top of page'.
+                On my SoundCloud channel, You can listen to my work. For full details of my studio equipment, there's Bandmix.
                 """
             )
         
@@ -147,7 +146,6 @@ if selected == "Projects":
         
     # --- Projects ---
     with st.container():
-        st.write("---")
         st.header("Recent Projects")
         st.write("##")
         image_column, text_column = st.columns((1, 2))
@@ -173,7 +171,7 @@ if selected == "Projects":
         st.write(
             """
             Finally, an Xmas song that doesn't mention war, greed, politics, breakups, or melancholy.
-            Written 'rather late' for 2024... It wasn't going to compete with Wham '🤣' but nevertherless... It was done. 
+            Written 'rather late' for 2024... It wasn't going to compete with Wham '🤣' but nevertheless... It was done. 
             It started as a 'free time' played piano melody and chorus hook.
             Then, came the strings, horns and EP...
             Next, for some Drums and percussion, guitars, bells, pads, and finally.. Vocals
