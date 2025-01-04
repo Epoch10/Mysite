@@ -8,6 +8,7 @@ from streamlit_lottie import st_lottie
 from streamlit_extras.let_it_rain import rain 
 import base64
 import streamlit as st
+from streamlit_image_select import image_select
 from st_social_media_links import SocialMediaIcons
 st.set_page_config(page_title="Epoch-10", page_icon="🎶", layout="wide")
 st.header(":violet[_Epoch 10_] :blue[Tutoring and production] 🎸🎹")
@@ -30,9 +31,7 @@ selected = option_menu(
     orientation="horizontal"
 )
 
-
 # Function to encode the image to base64
-
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
@@ -40,16 +39,7 @@ def get_base64_of_bin_file(bin_file):
 
 # Function to set the background image
 def set_bg_hack(main_bg):
-    '''
-    A function to unpack an image from root folder and set as bg.
- 
-    Returns
-    -------
-    The background.
-    '''
-    # set bg name
-    main_bg_ext = "png"
-        
+    main_bg_ext = "png"       
     st.markdown(
          f"""
          <style>
@@ -68,8 +58,9 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
+
 set_bg_hack('images/pic4.png')
-#run_snow_animation()
+
 
 # Load assets
 lottie_coding = load_lottieurl("https://lottie.host/3b3514d9-1f05-4168-8ad9-3c353b656e98/FVhHmJWQ8j.json")
@@ -83,12 +74,22 @@ doge  = Image.open("images/doge.jpg")
 #sleep = Image.open("images/sleep.png")
 lottie_2 = load_lottieurl("https://lottie.host/78128e69-546f-42f6-b7e6-37937db4ed3d/KPKtXtZubz.json")
 studio = Image.open("images/studio.jpg")
-
+ten = Image.open("images/ten.png")
 
 if selected == "Home":
-    # ---- Header section ----
+    
+    # ---- Home section ----
     with st.container():
+        st.write("---")
         left_column, right_column = st.columns(2)
+        with right_column:
+            st.write("####")
+             
+            st.image(ten)
+            st.title("Whether it's tuition, or help that you need with your project... ")
+            st.subheader("__Quit struggling on your own__")
+            st.write("__Look no further. Get in touch today!__")
+            
         with left_column:
             st.subheader("Hi I am Sam :wave:")
             st.title("A Musician/Producer/Tutor in Hampshire UK")
@@ -100,57 +101,80 @@ if selected == "Home":
                 "https://www.facebook.com/sam.crompton.946",
             ]
             social_media_icons = SocialMediaIcons(social_media_links)
-
             social_media_icons.render()
-            st.image(studio)
+
+            if 'img' not in st.session_state:            
+                False
+
+                st.session_state['img'] = ["images/studio.jpg"]
+
+            elif 'img' in st.session_state:
+                pass    
+            selected_img = {"img":""}
+            st.image(st.session_state['img'], use_container_width=True)
+            #st.session_state        
+            selected_img = image_select(None, ["images/studio.jpg", "images/pic1.jpg", "images/pic2.jpg"])
+            selected_img = str(selected_img)
+            #print (selected_img)
+            match = {
+                "img" : [
+                    selected_img
+                ]
+            } 
+            #match
+            #print (match)
+            #if match == st.session_state:
+                #True
+            if match != st.session_state:
+                st.session_state = match
+                #st.session_state
+                #False
+                st.rerun()
             
-
-        with right_column:
-            st.image(img_3)
-            #st_lottie(lottie_coding, height=300, key="code")
-
-    # ---- About me ----
-    with st.container():
-        left_column, right_column = st.columns(2)
-        with left_column:
-            st.header("About me")
-            st.write("##")
-            st.write(
-                """
-                I am a 44 years young guitarist/keyboardist, sound engineer, and composer/producer. First playing live regularly at age 16.
-                I am an accomplished player and tutor, both live and in the studio.
-                Songwriting and collaboration are top on my agenda, with a view to develop live projects. Don't hesitate to be in touch!
-                Instruments include the guitar to which I studied at ACM Guildford, I'm self taught on keyboards/organ/piano and C&G trained in sound engineering.
-                Prestigious gigs include the time 'with a band', I had the opportunity and the pleasure to support and play alongside members of the local band 'The Troggs', famous for
-                their many songs including the hits - 'Wild thing' and 'Love is all around'. 
-                Previous band projects include Konan, Eezey Money, The Del Newman band, The Greg Winters duo + collaborations etc.
-                I have proudly played venues ranging from the 'smaller side of tiny', to the theaters and large summer festivals.
-                Currently, I am guitarist/keyboard player in the cool band Sleepwalker. Please do check us out. 
-                I'm privately tutoring from my home address in Andover. In-person or online 'Zoom' lessons are negotiable. Contact section 'top of page'.
-                On my SoundCloud channel, You can listen to my work. For full details of my studio equipment, there's Bandmix.
-                """
-            )
         
-            
-            st.markdown('[![](https://i.ibb.co/8cWgXxf/sleep3.png)](https://www.facebook.com/profile.php?id=61560893038443)')
-            
 
-        with right_column:
-            #st_lottie(lottie_coding, height=300, key="code")
-            st.components.v1.iframe("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1905231439&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true", height=578)
-            st.markdown('[![](https://i.ibb.co/b6VHynh/newsize.jpg)](https://www.bandmix.co.uk/epoch-10/)')
-            #st.markdown('[![](https://i.ibb.co/b11B096/sc.png)](https://on.soundcloud.com/w4KZEJiMDdm7MDoy9)')
+        
+        # ---- About me ----
+        with st.container():
+            st.write("---")
+            left_column, right_column = st.columns(2)
 
-            #st.markdown('[![](https://i.ibb.co/1zmQjGG/bm3.png)](https://www.bandmix.co.uk/epoch-10/)')
+            with left_column:
+                st.header("About me")
+                st.write("##")
+                st.write(
+                    """
+                    I am a 44 years young guitarist/keyboardist, sound engineer, and composer/producer. First playing live regularly at age 16.
+                    I am an accomplished player and tutor, both live and in the studio.
+                    Songwriting and collaboration are top on my agenda, with a view to develop live projects. Don't hesitate to be in touch!
+                    Instruments include the guitar to which I studied at ACM Guildford, I'm self taught on keyboards/organ/piano and C&G trained in sound engineering.
+                    Prestigious gigs include the time 'with a band', I had the opportunity and the pleasure to support and play alongside members of the local band 'The Troggs', famous for
+                    their many songs including the hits - 'Wild thing' and 'Love is all around'. 
+                    Previous band projects include Konan, Eezey Money, The Del Newman band, The Greg Winters duo + collaborations etc.
+                    I have proudly played venues ranging from the 'smaller side of tiny', to the theaters and large summer festivals.
+                    Currently, I am guitarist/keyboard player in the cool band Sleepwalker. Please do check us out. 
+                    I'm privately tutoring from my home address in Andover. Online 'Zoom' lessons are negotiable. Use the form below to contact me regarding this.
+                    On my SoundCloud page, You can listen to my work. For full details of my studio equipment, there's Bandmix.
+                    """
+                )                 
+                st.markdown('[![](https://i.ibb.co/8cWgXxf/sleep3.png)](https://www.facebook.com/profile.php?id=61560893038443)')
+                
+            with right_column:          
+                st.components.v1.iframe("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1905231439&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true", height=578)
+                st.markdown('[![](https://i.ibb.co/b6VHynh/newsize.jpg)](https://www.bandmix.co.uk/epoch-10/)')
+                
 if selected == "Projects": 
         
     # --- Projects ---
     with st.container():
+        st.write("---")
         st.header("Recent Projects")
         st.write("##")
         image_column, text_column = st.columns((1, 2))
+
     with image_column:
         st.image(img_5)
+
     with text_column:
         st.subheader("Auld lang syne")
         st.write(
@@ -160,18 +184,21 @@ if selected == "Projects":
         )
         st.markdown("Watch 'Auld lang syne'...")
         st_player("https://www.youtube.com/watch?v=vFtHyA3ErGg", key="third_vid")
+
     with st.container():
         st.write("---")
         st.write("##")
+
         image_column, text_column = st.columns((1, 2))
     with image_column:
         st.image(img_1)
+
     with text_column:
         st.subheader("Merry Xmas")
         st.write(
             """
             Finally, an Xmas song that doesn't mention war, greed, politics, breakups, or melancholy.
-            Written 'rather late' for 2024... It wasn't going to compete with Wham '🤣' but nevertheless... It was done. 
+            Written 'rather late' for 2024... It wasn't going to compete with Wham '🤣' but nevertherless... It was done. 
             It started as a 'free time' played piano melody and chorus hook.
             Then, came the strings, horns and EP...
             Next, for some Drums and percussion, guitars, bells, pads, and finally.. Vocals
@@ -179,12 +206,15 @@ if selected == "Projects":
         )
         st.markdown("Watch 'Merry Xmas'...")
         st_player("https://youtu.be/7Bdr8Belb8Ihttps://youtu.be/7Bdr8Belb8I", key="first_vid")
+
     with st.container():
         st.write("---")
         st.write("##")
         image_column, text_column = st.columns((1, 2))
+
     with image_column:
         st.image(img_2)
+
     with text_column:
         st.subheader("2140")
         st.write(
@@ -195,11 +225,7 @@ if selected == "Projects":
         )
         st.markdown("Watch 'It's coming'...")
         st_player("https://youtu.be/BazJ4eJfC_w", key="second_vid")
-        c = """
-            <iframe width="558" height="360" src="https://www.youtube.com/embed/7Bdr8Belb8I" title="Merry Xmas (2024)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            """
-    
-   
+          
 if selected == "Contact":
 
     # ---- Contact ----
@@ -207,7 +233,6 @@ if selected == "Contact":
         st.write("---")
         st.header("👇Get in touch with me!👇")
         st.write("##")
-        # Documentation
         contact_form = """
         <form action="https://formspree.io/f/mgvvvyvj" method="POST">
             <input type="text" name="name" placeholder="Your name" required>
@@ -216,8 +241,8 @@ if selected == "Contact":
             <button type="submit">Send</button>
         </form>
         """
-
         left_column, right_column = st.columns(2)
+
         with left_column:    
             st.markdown(contact_form, unsafe_allow_html=True)
             st.markdown(
