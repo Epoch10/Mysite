@@ -4,3 +4,4 @@ streamlit_lottie
 st_social_media_links
 streamlit_player
 streamlit_option_menu
+streamlit_image_select
