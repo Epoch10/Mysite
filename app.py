@@ -113,7 +113,7 @@ if selected == "Home":
             selected_img = {"img":""}
             st.image(st.session_state['img'], use_container_width=True)
             #st.session_state        
-            selected_img = image_select(None, ["images/studio.jpg", "images/pic1.jpg", "images/pic2.jpg"])
+            selected_img = image_select(None, ["images/st1.png", "images/st2.jpg", "images/pic2.jpg"])
             selected_img = str(selected_img)
             #print (selected_img)
             match = {
