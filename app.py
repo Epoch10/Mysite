@@ -11,7 +11,7 @@ import streamlit as st
 from streamlit_image_select import image_select
 from st_social_media_links import SocialMediaIcons
 st.set_page_config(page_title="Epoch-10", page_icon="🎶", layout="wide")
-st.header(":violet[_Epoch 10_] :blue[Tutoring and production] 🎸🎹")
+st.header(":violet[_Epoch 10_] :blue[Tutoring and production] 🎸🎹🎧🎶🔊")
 def run_snow_animation():
     rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
 
