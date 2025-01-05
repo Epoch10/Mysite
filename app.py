@@ -146,7 +146,7 @@ if selected == "Home":
                 st.write("##")
                 st.write(
                     """
-                    I am a 44 years young guitarist/keyboardist, sound engineer, and composer/producer. First playing live regularly at age 16.
+                    ''I am a 44 years young guitarist/keyboardist, sound engineer, and composer/producer. First playing live regularly at age 16.
                     I am an accomplished player and tutor, both live and in the studio.
                     Songwriting and collaboration are top on my agenda, with a view to develop live projects. Don't hesitate to be in touch!
                     Instruments include the guitar to which I studied at ACM Guildford, I'm self taught on keyboards/organ/piano and C&G trained in sound engineering.
@@ -156,7 +156,7 @@ if selected == "Home":
                     I have proudly played venues ranging from the 'smaller side of tiny', to the theaters and large summer festivals.
                     Currently, I am guitarist/keyboard player in the cool band Sleepwalker. Please do check us out. 
                     I'm privately tutoring from my home address in Andover. In person/Online 'Zoom' lessons are negotiable through the contact section 'top of page'.
-                    On Soundcloud, You can listen to my work. For full details of my studio equipment and more about me, there's Bandmix.
+                    On Soundcloud, You can listen to my work. For full details of my studio equipment and more about me, there's Bandmix.''
                     """
                 )                 
                 st.markdown('[![](https://i.ibb.co/8cWgXxf/sleep3.png)](https://www.facebook.com/profile.php?id=61560893038443)')
