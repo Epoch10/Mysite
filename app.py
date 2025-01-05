@@ -11,7 +11,7 @@ import streamlit as st
 from streamlit_image_select import image_select
 from st_social_media_links import SocialMediaIcons
 st.set_page_config(page_title="Epoch-10", page_icon="🎶", layout="wide")
-st.header(":violet[_Epoch 10_] :blue[Tutoring and production] 🎸🎹🎧🎶🔊")
+
 
 custom_html = """
 <div class="banner">
@@ -35,6 +35,9 @@ This is a shareable link to your banner that you'll be able to share" alt="Banne
     
 </style>
 """
+#st.markdown("<h1 style='text-align: center; color: fuchsia;'>Epoch 10</h1>", unsafe_allow_html=True)
+#st.header(":violet[_Epoch 10_] :blue[Tutoring and production] 🎸🎹")
+#st.markdown("<h2 style='text-align: center; color: aqua;'>Tutoring and production</h2>", unsafe_allow_html=True)
 # Display the custom HTML
 st.components.v1.html(custom_html)
 
@@ -84,6 +87,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
+
 set_bg_hack('images/pic4.png')
 
 
@@ -108,21 +112,23 @@ if selected == "Home":
         st.write("---")
         left_column, right_column = st.columns(2)
         with right_column:
-            st.write("####")         
+            st.write("####")
+             
             st.image(ten)
             st.title("Whether it's tuition, or help that you need with your project... ")
+                       
             st.subheader("__Quit struggling on your own!__")
             st.write("__Look no further. Get in touch today!__")
             st.markdown("**Everybody** _starts somewhere!_")
             st.markdown("**Make** _the decision!_")
             st.subheader("__Do it now✅__")
             st.write("__You could bring something to my projects?__")
-            st.write("__Collaborations are ALWAYS welcome🤝__")
+            st.write("__Collaborations are ALWAYS welcome__")
             
-           
         with left_column:
             st.subheader("Hi I am Sam :wave:")
-            st.title("A Musician/Producer/Tutor in Hampshire UK")
+            st.subheader(" 🎸🎹🎧🎶🔊")
+            st.title("Producer and tutor in Hampshire UK")
             st.write("I have a home recording studio suitable for music production, arranging, tutoring, recording, remote stem work etc.")
             social_media_links = [
                 "https://www.tiktok.com/@epochten?_t=ZG-8sSfKrFrBS4&_r=1",
@@ -151,13 +157,19 @@ if selected == "Home":
                     selected_img
                 ]
             } 
-           
+            #match
+            #print (match)
+            #if match == st.session_state:
+                #True
             if match != st.session_state:
                 st.session_state = match
-                
+                #st.session_state
+                #False
                 st.rerun()
             
-         
+        
+
+        
         # ---- About me ----
         with st.container():
             st.write("---")
@@ -177,8 +189,8 @@ if selected == "Home":
                     Previous band projects include Konan, Eezey Money, The Del Newman band, The Greg Winters duo + collaborations etc.
                     I have proudly played venues ranging from the 'smaller side of tiny', to the theaters and large summer festivals.
                     Currently, I am guitarist/keyboard player in the cool band Sleepwalker. Please do check us out. 
-                    I'm privately tutoring from my home address in Andover. In person/Online 'Zoom' lessons are negotiable through the contact section 'top of page'.
-                    On Soundcloud, You can listen to my work. For full details of my studio equipment and more about me, there's Bandmix.''
+                    I'm privately tutoring from my home address in Andover. Online 'Zoom' lessons are negotiable. Use the form below to contact me regarding this.
+                    On my SoundCloud page, You can listen to my work. For full details of my studio equipment, there's Bandmix.''
                     """
                 )                 
                 st.markdown('[![](https://i.ibb.co/8cWgXxf/sleep3.png)](https://www.facebook.com/profile.php?id=61560893038443)')
