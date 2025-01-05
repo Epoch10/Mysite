@@ -113,10 +113,9 @@ if selected == "Home":
         left_column, right_column = st.columns(2)
         with right_column:
             st.write("####")
-             
             st.image(ten)
-            st.title("Whether it's tuition, or help that you need with your project... ")
-                       
+            st.title("Whether it's tuition, or help that")
+            st.title("you need with your project... ")                       
             st.subheader("__Quit struggling on your own!__")
             st.write("__Look no further. Get in touch today!__")
             st.markdown("**Everybody** _starts somewhere!_")
