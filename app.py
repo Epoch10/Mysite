@@ -87,8 +87,11 @@ if selected == "Home":
              
             st.image(ten)
             st.title("Whether it's tuition, or help that you need with your project... ")
-            st.subheader("__Quit struggling on your own__")
+            st.subheader("__Quit struggling on your own!__")
             st.write("__Look no further. Get in touch today!__")
+            st.markdown("**Everybody** _starts somewhere!_")
+            st.markdown("**Make** _the decision!_")
+            st.subheader("__Do it now✅__")
             
         with left_column:
             st.subheader("Hi I am Sam :wave:")
