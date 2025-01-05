@@ -155,8 +155,8 @@ if selected == "Home":
                     Previous band projects include Konan, Eezey Money, The Del Newman band, The Greg Winters duo + collaborations etc.
                     I have proudly played venues ranging from the 'smaller side of tiny', to the theaters and large summer festivals.
                     Currently, I am guitarist/keyboard player in the cool band Sleepwalker. Please do check us out. 
-                    I'm privately tutoring from my home address in Andover. Online 'Zoom' lessons are negotiable. Use the form below to contact me regarding this.
-                    On my SoundCloud page, You can listen to my work. For full details of my studio equipment, there's Bandmix.
+                    I'm privately tutoring from my home address in Andover. In person/Online 'Zoom' lessons are negotiable through the contact section 'top of page'.
+                    On Soundcloud, You can listen to my work. For full details of my studio equipment and more about me, there's Bandmix.
                     """
                 )                 
                 st.markdown('[![](https://i.ibb.co/8cWgXxf/sleep3.png)](https://www.facebook.com/profile.php?id=61560893038443)')
