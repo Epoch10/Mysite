@@ -58,7 +58,6 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-
 set_bg_hack('images/pic4.png')
 
 
@@ -83,8 +82,7 @@ if selected == "Home":
         st.write("---")
         left_column, right_column = st.columns(2)
         with right_column:
-            st.write("####")
-             
+            st.write("####")         
             st.image(ten)
             st.title("Whether it's tuition, or help that you need with your project... ")
             st.subheader("__Quit struggling on your own!__")
@@ -92,7 +90,10 @@ if selected == "Home":
             st.markdown("**Everybody** _starts somewhere!_")
             st.markdown("**Make** _the decision!_")
             st.subheader("__Do it now✅__")
+            st.write("__You could bring something to my projects?__")
+            st.write("__Collaborations are ALWAYS welcome__")st.subheader("__Quit struggling on your own!__")
             
+           
         with left_column:
             st.subheader("Hi I am Sam :wave:")
             st.title("A Musician/Producer/Tutor in Hampshire UK")
@@ -134,9 +135,7 @@ if selected == "Home":
                 #False
                 st.rerun()
             
-        
-
-        
+         
         # ---- About me ----
         with st.container():
             st.write("---")
