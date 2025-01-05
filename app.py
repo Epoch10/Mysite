@@ -91,7 +91,7 @@ if selected == "Home":
             st.markdown("**Make** _the decision!_")
             st.subheader("__Do it now✅__")
             st.write("__You could bring something to my projects?__")
-            st.write("__Collaborations are ALWAYS welcome__")
+            st.write("__Collaborations are ALWAYS welcome🤝__")
             
            
         with left_column:
