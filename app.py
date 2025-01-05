@@ -12,6 +12,26 @@ from streamlit_image_select import image_select
 from st_social_media_links import SocialMediaIcons
 st.set_page_config(page_title="Epoch-10", page_icon="🎶", layout="wide")
 st.header(":violet[_Epoch 10_] :blue[Tutoring and production] 🎸🎹🎧🎶🔊")
+
+custom_html = """
+<div class="banner">
+    <img src="https://img.freepik.com/premium-photo/wide-banner-with-many-random-square-hexagons-charcoal-dark-black-color_105589-1820.jpg" alt="Banner Image">
+</div>
+<style>
+    .banner {
+        width: 160%;
+        height: 200px;
+        overflow: hidden;
+    }
+    .banner img {
+        width: 100%;
+        object-fit: cover;
+    }
+</style>
+"""
+# Display the custom HTML
+st.components.v1.html(custom_html)
+
 def run_snow_animation():
     rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
 
@@ -125,14 +145,10 @@ if selected == "Home":
                     selected_img
                 ]
             } 
-            #match
-            #print (match)
-            #if match == st.session_state:
-                #True
+           
             if match != st.session_state:
                 st.session_state = match
-                #st.session_state
-                #False
+                
                 st.rerun()
             
          
