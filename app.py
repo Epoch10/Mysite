@@ -18,7 +18,7 @@ custom_html = """
     <img src="https://share.creavite.co/677ad6d30ae0e4f686a64ed5.gif
 This is a shareable link to your banner that you'll be able to share" alt="Banner Image">
 </div>
-<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1.7">
 <style>
     .banner {
         width: 100%;
@@ -29,7 +29,7 @@ This is a shareable link to your banner that you'll be able to share" alt="Banne
         align-items: center;
         justify-content: center;
     }
-    .banner img {
+    .banner image {
         width: 100%;
         object-fit: cover;
     
