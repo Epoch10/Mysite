@@ -234,6 +234,9 @@ if selected == "Contact":
     with st.container():
         st.write("---")
         st.header("👇Get in touch with me!👇")
+        st.subheader("Could I do more?")
+        st.write("Or is there something I can improve on?")
+        st.write("Let me know...")
         st.write("##")
         contact_form = """
         <form action="https://formspree.io/f/mgvvvyvj" method="POST">
