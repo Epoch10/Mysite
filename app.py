@@ -15,18 +15,24 @@ st.header(":violet[_Epoch 10_] :blue[Tutoring and production] 🎸🎹🎧🎶�
 
 custom_html = """
 <div class="banner">
-    <img src="https://img.freepik.com/premium-photo/wide-banner-with-many-random-square-hexagons-charcoal-dark-black-color_105589-1820.jpg" alt="Banner Image">
+    <img src="https://share.creavite.co/677ad6d30ae0e4f686a64ed5.gif
+This is a shareable link to your banner that you'll be able to share" alt="Banner Image">
 </div>
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
 <style>
     .banner {
-        width: 160%;
-        height: 200px;
+        width: 100%;
+        height: 220px;
         overflow: hidden;
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
     }
     .banner img {
         width: 100%;
         object-fit: cover;
-    }
+    
 </style>
 """
 # Display the custom HTML
