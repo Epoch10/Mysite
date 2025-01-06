@@ -51,7 +51,7 @@ This is a shareable link to your banner that you'll be able to share" alt="Banne
         justify-content: center;
     }
     .banner image {
-        height: 290px;height: 290px;
+        height: 290px;
         width: 100%;
         object-fit: cover;
         margin: 0 auto;
