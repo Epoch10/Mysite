@@ -43,7 +43,7 @@ This is a shareable link to your banner that you'll be able to share" alt="Banne
 <style>
     .banner {
         width: 100%;
-        height: 220px;
+        height: 260px;
         overflow: hidden;
         display: flex;
         margin: 0;
@@ -51,9 +51,13 @@ This is a shareable link to your banner that you'll be able to share" alt="Banne
         justify-content: center;
     }
     .banner image {
+        height: 290px;height: 290px;
         width: 100%;
         object-fit: cover;
-    
+        margin: 0 auto;
+        border-radius: 4px;
+        object-fit: fill;
+    }
 </style>
 """
 #st.markdown("<h1 style='text-align: center; color: fuchsia;'>Epoch 10</h1>", unsafe_allow_html=True)
