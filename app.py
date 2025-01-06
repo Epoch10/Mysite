@@ -171,17 +171,17 @@ if selected == "Home":
                 st.write("##")
                 st.write(
                     """
-                    :blue[''I am a 44 years young guitarist/keyboardist, sound engineer, and composer/producer. First playing live regularly at age 16.
-                    I am an accomplished player and tutor, both live and in the studio.
-                    Songwriting and collaboration are top on my agenda, with a view to develop live projects. Don't hesitate to be in touch!
-                    Instruments include the guitar to which I studied at ACM Guildford, I'm self taught on keyboards/organ/piano and C&G trained in sound engineering.
-                    Prestigious gigs include the time 'with a band', I had the opportunity and the pleasure to support and play alongside members of the local band 'The Troggs', famous for
-                    their many songs including the hits - 'Wild thing' and 'Love is all around'. 
-                    Previous band projects include Konan, Eezey Money, The Del Newman band, The Greg Winters duo + collaborations etc.
-                    I have proudly played venues ranging from the 'smaller side of tiny', to the theaters and large summer festivals.
-                    Currently, I am guitarist/keyboard player in the cool band Sleepwalker. Please do check us out. 
-                    I'm privately tutoring from my home address in Andover. Online 'Zoom' lessons are negotiable. Use the form below to contact me regarding this.
-                    On my SoundCloud page, You can listen to my work. For full details of my studio equipment, there's Bandmix.'']
+                    :blue[''I am a 44 years young] guitarist, keyboardist, sound engineer, and composer/producer:blue[. First playing live regularly at age 16.
+                    I am an accomplished] player :blue[and] tutor, :blue[both live and in the studio.]
+                    Songwriting :blue[and] collaboration :blue[ are top on my agenda, with a view to develop live] projects:blue[.
+                    I studied the guitar at] ACM Guildford:blue[, I'm self taught on keyboards/organ/piano and] City and Guilds:blue[ trained in] sound engineering:blue[.
+                    Prestigious gigs include the time 'with a band', I had the opportunity and the pleasure to support and play alongside members of the local band ']The Troggs:blue[' - famous for
+                    their many songs including the hits ']Wild thing:blue[' and ']Love is all around:blue['. 
+                    Previous band projects include] Konan:blue[,] Eezey Money:blue[,] The Del Newman band:blue[,] The Greg Winters duo :blue[+] collaborations:blue[ etc.
+                    I have proudly played venues ranging from the 'smaller side of tiny', to the] theaters :blue[and] large summer festivals:blue[.
+                    Currently, I am guitarist/keyboard player in the cool band] Sleepwalker:blue[. Please do check us out. 
+                    I'm privately] tutoring:blue[ from my home address in] Andover:blue[. Online] Zoom:blue[ lessons are negotiable. Find the] contact :blue[section at the top of this page.
+                    In the] SoundCloud:blue[ window, You can listen to my] work:blue[. For full details of my studio equipment, there's] Bandmix:blue[.'']
                     """
                 )                 
                 st.markdown('[![](https://i.ibb.co/8cWgXxf/sleep3.png)](https://www.facebook.com/profile.php?id=61560893038443)')
