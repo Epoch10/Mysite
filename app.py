@@ -43,17 +43,17 @@ This is a shareable link to your banner that you'll be able to share" alt="Banne
 <style>
     .banner {
         width: 100%;
-        height: 260px;
+        height: 160px;
         overflow: hidden;
         display: flex;
-        margin: 0;
+        margin: 0 auto;
+        border-radius: 4px;
         align-items: center;
         justify-content: center;
     }
     .banner image {
         height: 290px;
         width: 100%;
-        object-fit: cover;
         margin: 0 auto;
         border-radius: 4px;
         object-fit: fill;
