@@ -39,7 +39,7 @@ custom_html = """
     <img src="https://share.creavite.co/677ad6d30ae0e4f686a64ed5.gif
 This is a shareable link to your banner that you'll be able to share" alt="Banner Image">
 </div>
-<meta name="viewport" content="width=device-width, initial-scale=1.7">
+<meta name="viewport" content="width=device-width, initial-scale=2.7">
 <style>
     .banner {
         width: 100%;
