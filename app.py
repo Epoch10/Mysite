@@ -121,7 +121,7 @@ if selected == "Home":
             st.write(":green[__Look no further. Get in touch today!__]")
             st.markdown(":green[__**Everybody**__] :green[_starts somewhere!_]")
             st.markdown(":green[__**Make**__] :green[_the decision!_]")
-            st.subheader(":green[__Do it now✅__]")
+            st.subheader("Do it now✅")
             st.write(":orange[__You could bring something to my projects?__]")
             st.write(":orange[__Collaborations are ALWAYS welcome__]")
             
