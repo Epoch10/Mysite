@@ -106,29 +106,30 @@ studio = Image.open("images/studio.jpg")
 ten = Image.open("images/ten.png")
 
 if selected == "Home":
-    
     # ---- Home section ----
     with st.container():
         st.write("---")
         left_column, right_column = st.columns(2)
         with right_column:
             st.write("####")
+             
             st.image(ten)
-            st.title("Whether it's tuition, or help that")
-            st.title("you need with your project... ")                       
-            st.subheader("__Quit struggling on your own!__")
-            st.write("__Look no further. Get in touch today!__")
-            st.markdown("**Everybody** _starts somewhere!_")
-            st.markdown("**Make** _the decision!_")
-            st.subheader("__Do it now✅__")
-            st.write("__You could bring something to my projects?__")
-            st.write("__Collaborations are ALWAYS welcome__")
+            st.title(":violet[_Whether it's tuition, or help that you need_]")
+            st.title(":blue[with your project...]")
+                       
+            st.subheader(":red[__Quit struggling on your own!__]")
+            st.write(":green[__Look no further. Get in touch today!__]")
+            st.markdown(":green[__**Everybody**__] :green[_starts somewhere!_]")
+            st.markdown(":green[__**Make**__] :green[_the decision!_]")
+            st.subheader(":green[__Do it now✅__]")
+            st.write(":orange[__You could bring something to my projects?__]")
+            st.write(":orange[__Collaborations are ALWAYS welcome__]")
             
         with left_column:
-            st.subheader("Hi I am Sam :wave:")
+            st.subheader(":blue[__Hi I am Sam__] :wave:")
             st.subheader(" 🎸🎹🎧🎶🔊")
-            st.title("Producer and tutor in Hampshire UK")
-            st.write("I have a home recording studio suitable for music production, arranging, tutoring, recording, remote stem work etc.")
+            st.title(":violet[_Producer and tutor in Hampshire UK_]")
+            st.write(":blue[I have a home recording studio suitable for music production, arranging, tutoring, recording, remote stem work etc.]")
             social_media_links = [
                 "https://www.tiktok.com/@epochten?_t=ZG-8sSfKrFrBS4&_r=1",
                 "https://youtube.com/@jamessamuels9943?feature=shared",
@@ -156,30 +157,21 @@ if selected == "Home":
                     selected_img
                 ]
             } 
-            #match
-            #print (match)
-            #if match == st.session_state:
-                #True
-            if match != st.session_state:
-                st.session_state = match
-                #st.session_state
-                #False
-                st.rerun()
-            
-        
 
-        
+            if match != st.session_state:
+                st.session_state = match  
+                st.rerun()
         # ---- About me ----
         with st.container():
             st.write("---")
             left_column, right_column = st.columns(2)
 
             with left_column:
-                st.header("About me")
+                st.header(":violet[_About me_]")
                 st.write("##")
                 st.write(
                     """
-                    ''I am a 44 years young guitarist/keyboardist, sound engineer, and composer/producer. First playing live regularly at age 16.
+                    :blue[''I am a 44 years young guitarist/keyboardist, sound engineer, and composer/producer. First playing live regularly at age 16.
                     I am an accomplished player and tutor, both live and in the studio.
                     Songwriting and collaboration are top on my agenda, with a view to develop live projects. Don't hesitate to be in touch!
                     Instruments include the guitar to which I studied at ACM Guildford, I'm self taught on keyboards/organ/piano and C&G trained in sound engineering.
@@ -189,7 +181,7 @@ if selected == "Home":
                     I have proudly played venues ranging from the 'smaller side of tiny', to the theaters and large summer festivals.
                     Currently, I am guitarist/keyboard player in the cool band Sleepwalker. Please do check us out. 
                     I'm privately tutoring from my home address in Andover. Online 'Zoom' lessons are negotiable. Use the form below to contact me regarding this.
-                    On my SoundCloud page, You can listen to my work. For full details of my studio equipment, there's Bandmix.''
+                    On my SoundCloud page, You can listen to my work. For full details of my studio equipment, there's Bandmix.'']
                     """
                 )                 
                 st.markdown('[![](https://i.ibb.co/8cWgXxf/sleep3.png)](https://www.facebook.com/profile.php?id=61560893038443)')
