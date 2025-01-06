@@ -66,6 +66,15 @@ This is a shareable link to your banner that you'll be able to share" alt="Banne
 # Display the custom HTML
 st.components.v1.html(custom_html)
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 def run_snow_animation():
     rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
 
