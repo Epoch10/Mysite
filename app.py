@@ -333,7 +333,7 @@ if selected == "Contact":
     # ---- Contact ----
     with st.container():
         
-        st.write("---")
+        #st.write("---")
         st.subheader("Could I do more?")
         st.write("Or is there something I can improve on?")
         st.write("Let me know...")
