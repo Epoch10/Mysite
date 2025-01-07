@@ -257,7 +257,7 @@ if selected == "Home":
                     Prestigious gigs include the time 'with a band', I had the opportunity and the pleasure to support and play alongside members of the local band ']The Troggs:blue[' - famous for
                     their many songs including the hits ']Wild thing:blue[' and ']Love is all around:blue['. 
                     Previous band projects include] Konan:blue[,] Eezey Money:blue[,] The Del Newman band:blue[,] The Greg Winters duo :blue[+] collaborations:blue[ etc.
-                    I have proudly played venues ranging from the 'smaller side of tiny', to the] theaters :blue[and] large summer festivals:blue[.
+                    I have proudly played venues ranging from the 'smaller side of tiny', to the] theatres :blue[and] large summer festivals:blue[.
                     Currently, I am guitarist/keyboard player in the cool band] Sleepwalker:blue[. Please do check us out. 
                     I'm privately] tutoring:blue[ from my home address in] Andover:blue[. Online] Zoom:blue[ lessons are negotiable. Find the] contact :blue[section at the top of this page.
                     In the] SoundCloud:blue[ window, You can listen to my] work:blue[. For full details of my studio equipment, there's] Bandmix:blue[.'']
