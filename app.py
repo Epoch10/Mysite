@@ -323,10 +323,13 @@ if selected == "Projects":
         st_player("https://youtu.be/BazJ4eJfC_w", key="second_vid")
           
 if selected == "Contact":
+
     left_column, right_column = st.columns(2)
+
     with left_column:
         st.header("Get in touch!")
-        #st.subheader("👇👇👇👇👇")
+        st.write("---")
+    left_column, right_column = st.columns(2)
     # ---- Contact ----
     with st.container():
         
@@ -347,13 +350,19 @@ if selected == "Contact":
         with left_column:    
             st.markdown(contact_form, unsafe_allow_html=True)
             st.markdown(
-                f"🙏Keep the project going... DOGE accepted🙏" 
-                f"DFdL3jeQ9o6hWoHJoHAP7WivULfBvabHJp"
-            )
+                f"Don't forget to like, share,")
+            st.markdown(
+                f"and subscribe to my channels")
+
+            st.markdown(
+                f"Keep the project going🙏 DOGE accepted")
+            st.markdown(
+                f"DFdL3jeQ9o6hWoHJoHAP7WivULfBvabHJp")
+            
             st.image(doge, width = 200)
 
-        with right_column:
-            st.image(img_4)
+    with right_column:
+        st.image(img_4)
 
 st.markdown(
     f"Happy new year 2025🎉"
