@@ -331,15 +331,15 @@ if selected == "Projects":
         )
         st.markdown("Watch 'It's coming'...")
         st_player("https://youtu.be/BazJ4eJfC_w", key="second_vid")
-          
 if selected == "Contact":
+
+    #left_column, right_column = st.columns(2)
+
+    
+    st.header("Get in touch!")
     st.write("---")
     left_column, right_column = st.columns(2)
-
-    with left_column:
-        st.header("Get in touch!")
-        
-    left_column, right_column = st.columns(2)
+    st.empty()
     # ---- Contact ----
     with st.container():
         
@@ -377,5 +377,6 @@ if selected == "Contact":
 st.markdown(
     f"Happy new year 2025🎉"
 )
+
 local_css("style/style2.css")
 local_css("style/style.css")
