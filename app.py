@@ -333,12 +333,12 @@ if selected == "Projects":
         st_player("https://youtu.be/BazJ4eJfC_w", key="second_vid")
           
 if selected == "Contact":
-
+    st.write("---")
     left_column, right_column = st.columns(2)
 
     with left_column:
         st.header("Get in touch!")
-        st.write("---")
+        
     left_column, right_column = st.columns(2)
     # ---- Contact ----
     with st.container():
