@@ -187,7 +187,7 @@ if selected == "Home":
             st.write("####")
              
             st.image(ten)
-            st.title(":violet[_Whether it's tuition, or help that_")
+            st.title(":violet[_Whether it's tuition, or help that_]")
             st.title(":blue[you need with your project...]")
                        
             st.subheader(":red[__Quit struggling on your own!__]")
