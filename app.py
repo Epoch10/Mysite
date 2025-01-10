@@ -112,11 +112,7 @@ st.components.v1.html(custom_html)
 def run_snow_animation():
     rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
 
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+
 
 # Menu
 selected = option_menu(
