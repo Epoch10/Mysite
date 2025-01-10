@@ -155,7 +155,7 @@ set_bg_hack('images/pic4.png')
 
 
 # Load assets
-lottie_coding = load_lottieurl("https://lottie.host/3b3514d9-1f05-4168-8ad9-3c353b656e98/FVhHmJWQ8j.json")
+#lottie_coding = load_lottieurl("https://lottie.host/3b3514d9-1f05-4168-8ad9-3c353b656e98/FVhHmJWQ8j.json")
 img_1  = Image.open("images/pic1.jpg")
 img_2 = Image.open("images/pic2.jpg")
 img_3 = Image.open("images/pic3.png")
@@ -164,7 +164,7 @@ img_5  = Image.open("images/pic6.jpg")
 sw = Image.open("images/sw.jpg")
 doge  = Image.open("images/doge.jpg")
 #sleep = Image.open("images/sleep.png")
-lottie_2 = load_lottieurl("https://lottie.host/78128e69-546f-42f6-b7e6-37937db4ed3d/KPKtXtZubz.json")
+#lottie_2 = load_lottieurl("https://lottie.host/78128e69-546f-42f6-b7e6-37937db4ed3d/KPKtXtZubz.json")
 studio = Image.open("images/studio.jpg")
 ten = Image.open("images/ten.png")
 
