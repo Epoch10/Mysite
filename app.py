@@ -2,16 +2,11 @@ from  PIL import Image
 from streamlit_player import st_player
 from streamlit_extras.stylable_container import stylable_container
 from streamlit_option_menu import option_menu
-import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
 from streamlit_extras.let_it_rain import rain 
 import base64
 import streamlit as st
 import streamlit.components.v1 as components
-from htbuilder import HtmlElement, div, ul, li, br, hr, a, p, img, styles, classes, fonts
-from htbuilder.units import percent, px
-from htbuilder.funcs import rgba, rgb
 from streamlit_image_select import image_select
 from st_social_media_links import SocialMediaIcons
 st.set_page_config(page_title="Epoch-10", page_icon="🎶", layout="wide", initial_sidebar_state="collapsed")
@@ -187,9 +182,8 @@ if selected == "Home":
             st.write("####")
              
             st.image(ten)
-            st.title(":violet[_Whether it's tuition, or help that_]")
-            st.title(":blue[you need with your project...]")
-                       
+            st.title(":violet[_Whether it's tuition you require_]")
+            st.subheader(":blue[_or help with your project..._]")              
             st.subheader(":red[__Quit struggling on your own!__]")
             st.write(":green[__Look no further. Get in touch today!__]")
             st.markdown(":green[__**Everybody**__] :green[_starts somewhere!_]")
