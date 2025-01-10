@@ -1,14 +1,13 @@
 from  PIL import Image
 from streamlit_player import st_player
-from streamlit_extras.stylable_container import stylable_container
 from streamlit_option_menu import option_menu
 import streamlit as st
-from streamlit_extras.let_it_rain import rain 
 import base64
 import streamlit as st
 import streamlit.components.v1 as components
 from streamlit_image_select import image_select
 from st_social_media_links import SocialMediaIcons
+
 st.set_page_config(page_title="Epoch-10", page_icon="🎶", layout="wide", initial_sidebar_state="collapsed")
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 st.markdown("""
@@ -109,11 +108,6 @@ with st.container():
 
 st.components.v1.html(custom_html)
 
-def run_snow_animation():
-    rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
-
-
-
 # Menu
 selected = option_menu(
     menu_title=None,
@@ -155,7 +149,7 @@ set_bg_hack('images/pic4.png')
 
 
 # Load assets
-#lottie_coding = load_lottieurl("https://lottie.host/3b3514d9-1f05-4168-8ad9-3c353b656e98/FVhHmJWQ8j.json")
+
 img_1  = Image.open("images/pic1.jpg")
 img_2 = Image.open("images/pic2.jpg")
 img_3 = Image.open("images/pic3.png")
@@ -163,8 +157,6 @@ img_4 = Image.open("images/pic5.png")
 img_5  = Image.open("images/pic6.jpg")
 sw = Image.open("images/sw.jpg")
 doge  = Image.open("images/doge.jpg")
-#sleep = Image.open("images/sleep.png")
-#lottie_2 = load_lottieurl("https://lottie.host/78128e69-546f-42f6-b7e6-37937db4ed3d/KPKtXtZubz.json")
 studio = Image.open("images/studio.jpg")
 ten = Image.open("images/ten.png")
 
@@ -176,7 +168,6 @@ if selected == "Home":
         left_column, right_column = st.columns(2)
         with right_column:
             st.write("####")
-             
             st.image(ten)
             st.title(":violet[_Whether it's tuition you require_]")
             st.subheader(":blue[_or help with your project..._]")              
@@ -204,7 +195,6 @@ if selected == "Home":
 
             if 'img' not in st.session_state:            
                 False
-
                 st.session_state['img'] = ["images/studio.jpg"]
 
             elif 'img' in st.session_state:
@@ -230,7 +220,6 @@ if selected == "Home":
         with st.container():
             st.write("---")
             left_column, right_column = st.columns(2)
-
             with left_column:
                 st.header(":violet[_About me_]")
                 st.write("##")
@@ -317,19 +306,15 @@ if selected == "Projects":
         )
         st.markdown("Watch 'It's coming'...")
         st_player("https://youtu.be/BazJ4eJfC_w", key="second_vid")
+      
 if selected == "Contact":
-
-    #left_column, right_column = st.columns(2)
-
-    
     st.header("Get in touch!")
     st.write("---")
     left_column, right_column = st.columns(2)
     st.empty()
+  
     # ---- Contact ----
-    with st.container():
-        
-        #st.write("---")
+    with st.container():        
         st.subheader("Could I do more?")
         st.write("Or is there something I can improve on?")
         st.write("Let me know...")
@@ -349,12 +334,10 @@ if selected == "Contact":
                 f"Don't forget to like, share,")
             st.markdown(
                 f"and subscribe to my channels")
-
             st.markdown(
                 f"Keep the project going🙏 DOGE accepted")
             st.markdown(
                 f"DFdL3jeQ9o6hWoHJoHAP7WivULfBvabHJp")
-            
             st.image(doge, width = 200)
 
     with right_column:
