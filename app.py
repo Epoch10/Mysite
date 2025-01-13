@@ -169,7 +169,7 @@ if selected == "Home":
         with right_column:
             st.write("####")
             st.image(ten)
-            st.title(":violet[_Whether it's tuition you require_]")
+            st.title(":violet[_Whether it's tuition you require,_]")
             st.subheader(":blue[_or help with your project..._]")              
             st.subheader(":red[__Quit struggling on your own!__]")
             st.write(":green[__Look no further. Get in touch today!__]")
