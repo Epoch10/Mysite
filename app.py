@@ -343,9 +343,9 @@ if selected == "Contact":
     with right_column:
         st.image(img_4)
 
-#st.markdown(
-    #f"Happy new year 2025🎉"
-#)
+st.markdown(
+    f""
+)
 
 local_css("style/style2.css")
 local_css("style/style.css")
