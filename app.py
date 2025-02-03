@@ -345,7 +345,7 @@ if selected == "Contact":
 
 #st.markdown(
     #f"Happy new year 2025🎉"
-)
+#)
 
 local_css("style/style2.css")
 local_css("style/style.css")
