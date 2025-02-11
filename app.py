@@ -230,7 +230,7 @@ if selected == "Home":
                     Songwriting :blue[and] collaboration :blue[ are top on my agenda, with a view to develop live] projects:blue[.
                     I studied the guitar at] ACM Guildford:blue[, I'm self taught on keyboards/organ/piano and] City and Guilds:blue[ trained in] sound engineering:blue[.
                     Prestigious gigs include the time 'with a band', I had the opportunity and the pleasure to support and play alongside members of the local band ']The Troggs:blue[' - famous for
-                    their many songs including the hits ']Wild thing:blue[' and ']Love is all around:blue['. 
+                    their many songs including the hits ']Wild Thing:blue[' and ']Love Is All Around:blue['. 
                     Previous band projects include] Konan:blue[,] Eezey Money:blue[,] The Del Newman band:blue[,] The Greg Winters duo :blue[+] collaborations:blue[ etc.
                     I have proudly played venues ranging from the 'smaller side of tiny', to the] theatres :blue[and] large summer festivals:blue[.
                     Currently, I am guitarist/keyboard player in the cool band] Sleepwalker:blue[. Please do check us out. 
