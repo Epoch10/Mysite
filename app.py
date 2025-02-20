@@ -188,7 +188,7 @@ if selected == "Home":
                 "https://www.tiktok.com/@epochten?_t=ZG-8sSfKrFrBS4&_r=1",
                 "https://youtube.com/@jamessamuels9943?feature=shared",
                 "https://www.instagram.com/s.crompton50/profilecard/?igsh=MXNqaHl2OWVtczV6eQ==",
-                "https://www.facebook.com/sam.crompton.946",
+                "https://www.facebook.com/profile.php?id=61571819724757",
             ]
             social_media_icons = SocialMediaIcons(social_media_links)
             social_media_icons.render()
