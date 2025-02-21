@@ -344,7 +344,7 @@ if selected == "Contact":
         st.image(img_4)
 
 st.markdown(
-    f""
+    f"DBS certificate check available on request"
 )
 
 local_css("style/style2.css")
